@@ -4,8 +4,7 @@
   "description": "",
   "main": "endpoint_test.js",
   "dependencies": {
-    "casperjs": "^1.1.4",
-    "phantomjs": "^2.1.7"
+    "casperjs": "^1.1.4"
   },
   "devDependencies": {
     "casperjs": "^1.1.4",
