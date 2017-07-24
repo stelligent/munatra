@@ -1,11 +1,12 @@
 environments:
-- name: dev
-- name: production
+    - name: dev
+    - name: production
 service:
   name: munatra
+  healthEndpoint: /health
   port: 80
   pathPatterns:
-  - /*
+    - /hello
   pipeline:
     source:
       provider: CodeCommit
