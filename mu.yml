@@ -20,4 +20,4 @@ service:
       image: aws/codebuild/eb-ruby-2.3-amazonlinux-64:2.1.3
     acceptance:
       environment: munatradev
-      image: aws/codebuild/eb-nodejs-6.10.0-amazonlinux-64:4.0.0
+      image: aws/codebuild/nodejs:6.3.1

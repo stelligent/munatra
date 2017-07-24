@@ -1,7 +1,7 @@
 {
   "name": "munatra",
   "version": "1.0.0",
-  "description": "",
+  "description": "Testing for munatra",
   "main": "endpoint_test.js",
   "dependencies": {
     "casperjs": "^1.1.4"
