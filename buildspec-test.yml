@@ -6,6 +6,7 @@ phases:
       - npm install  
   build:
     commands:
+      - export BASE_URL=`cat env.json | python -c 'import json,sys;obj=json.load(sys.stdin);print obj["values"][0]["value"]'`
       - npm test
 
 artifacts:
