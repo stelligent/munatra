@@ -1,5 +1,5 @@
 environments:
-  - name: dev
+  - name: munatradev
     cluster:
       maxSize: 2
   - name: production
@@ -11,7 +11,7 @@ service:
   healthEndpoint: /health
   port: 80
   pathPatterns:
-    - /hello
+    - /*
   pipeline:
     source:
       provider: CodeCommit
@@ -19,4 +19,5 @@ service:
     build: 
       image: aws/codebuild/eb-ruby-2.3-amazonlinux-64:2.1.3
     acceptance:
+      environment: munatradev
       image: aws/codebuild/eb-ruby-2.3-amazonlinux-64:2.1.3
