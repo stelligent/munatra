@@ -1,6 +1,11 @@
 environments:
-    - name: dev
-    - name: production
+  - name: dev
+    cluster:
+      maxSize: 2
+  - name: production
+    cluster:
+      maxSize: 2
+
 service:
   name: munatra
   healthEndpoint: /health
@@ -11,3 +16,7 @@ service:
     source:
       provider: CodeCommit
       repo: munatra
+    build: 
+      image: aws/codebuild/eb-ruby-2.3-amazonlinux-64:2.1.3
+    acceptance:
+      image: aws/codebuild/eb-ruby-2.3-amazonlinux-64:2.1.3
