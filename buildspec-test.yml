@@ -3,8 +3,8 @@ version: 0.2
 phases:
   install:
     commands:
-      - npm install -g phantomjs
-      - npm install -g casperjs
+      - npm -g install phantomjs-prebuilt 
+      - npm -g install casperjs
   build:
     commands:
       - casperjs test endpoint_test.js
