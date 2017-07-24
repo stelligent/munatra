@@ -1,0 +1,23 @@
+{
+  "name": "munatra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "endpoint_test.js",
+  "dependencies": {
+    "casperjs": "^1.1.4",
+    "phantomjs": "^2.1.7"
+  },
+  "devDependencies": {
+    "casperjs": "^1.1.4",
+    "phantomjs-prebuilt": "^2.1.14"
+  },
+  "scripts": {
+    "test": "casperjs test test/endpoint_test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/munatra"
+  },
+  "author": "",
+  "license": "ISC"
+}

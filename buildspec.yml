@@ -7,7 +7,7 @@ phases:
       - gem install rack-test
   build:
     commands:
-      - ruby sinatra_test.rb
+      - ruby test/sinatra_test.rb
 
 artifacts:
   files:
