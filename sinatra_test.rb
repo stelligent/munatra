@@ -12,7 +12,7 @@ class HelloWorldTest < Test::Unit::TestCase
   end
 
   def test_it_says_hello_world
-    get '/hello'
+    get '/'
     assert last_response.ok?
     assert_equal 'Hello, World!', last_response.body
   end
