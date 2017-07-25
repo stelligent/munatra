@@ -2,7 +2,7 @@ environments:
   - name: munatradev
     cluster:
       maxSize: 2
-  - name: production
+  - name: munatraprod
     cluster:
       maxSize: 2
 
@@ -21,3 +21,5 @@ service:
     acceptance:
       environment: munatradev
       image: aws/codebuild/nodejs:6.3.1
+    production:
+      environment: munatraprod
