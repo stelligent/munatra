@@ -14,6 +14,7 @@ service:
     - /*
   pipeline:
     source:
+      provider: GitHub
       repo: stelligent/munatra
     build: 
       image: aws/codebuild/eb-ruby-2.3-amazonlinux-64:2.1.3
