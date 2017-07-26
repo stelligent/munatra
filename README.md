@@ -12,6 +12,9 @@ The only requirements for deploy is a properly configured [AWS CLI](https://aws.
 
 ## Usage
 
+### Demo
+![Demo Video](https://s3.amazonaws.com/munatra-images/MunatraSmall.gif)
+
 To deploy on an AWS account, simply run `mu pipeline up -t [GitHub Personal Access Token]`. 
 
 Afterwards, navigate to the Pipeline URL found in the output of `mu service show munatra` to see the build stages of the application. Development environment endpoint URLs can be found as "Base URL" by running `mu environment show munatradev`. After a deployment approval is given within AWS CodePipeline and the deploy finishes, the production endpoint URL can be found, similarly as "Base URL", by running `mu environment show munatraprod`. 
