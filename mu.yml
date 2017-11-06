@@ -1,3 +1,5 @@
+namespace: pmd
+
 environments:
   - name: munatradev
     cluster:
