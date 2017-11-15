@@ -1,5 +1,8 @@
 namespace: pmd
 
+extensions:
+- url: https://github.com/stelligent/mu-cfn_nag/archive/v0.1.zip
+
 environments:
   - name: munatradev
     cluster:
