@@ -1,16 +1,11 @@
 environments:
   - name: munatradev
-    cluster:
-      maxSize: 2
+    provider: eks
   - name: munatraprod
-    cluster:
-      maxSize: 2
-
-extensions:
-- url: https://github.com/stelligent/mu-cfn_nag/archive/v0.1.zip      
+    provider: eks
 
 service:
-  name: munatra
+  name: munatra-eks
   healthEndpoint: /health
   port: 80
   pathPatterns:
